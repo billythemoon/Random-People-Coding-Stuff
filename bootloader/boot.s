@@ -137,7 +137,6 @@ itos:
 	;; DI is going backwards btw
 
 	mov	bx, 10			;; Decimal counting system
-	mov di, 500h ;; Initialise the DI register so it doesn't overwrite unknown positions in RAM
 	mov	byte [di], 0		;; Adding null terminator
 	buffer db 16 dup(0) 	;; DI not initialised yet
 	mov di, buffer + 15
