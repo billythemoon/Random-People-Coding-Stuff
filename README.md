@@ -35,7 +35,37 @@ If you contribute at all in any way to the project, please add your name to the 
 - Package Manager
 - First Official Release
 
-## Contact (If you want to be a point of contact email me and then you can add you email here)
+# How do I compile and run this project?
+
+**NOTE: THESE INSTRUCTIONS ARE TARGETING LINUX BASED SYSTEMS, IF YOU DON'T USE LINUX THEN INSTALL LINUX ON A VIRTUAL MACHINE TO FOLLOW THESE**
+
+### Step 1 - Install required build tools
+I am using Ubuntu for this guide, the following command will install the required tools on any Ubuntu based distro
+
+`sudo apt install build-essential binutils nasm clang qemu-system-x86`
+
+This installs:
+ - NASM (for assembling the bootloader)
+ - LD (the GNU linker for linking the code into one image)
+ - Clang (for compiling the C code)
+ - GCC (backup compiler, same use as Clang)
+ - Make (for automating all the commands needed)
+ - QEMU (emulator, for testing the OS)
+
+If you are not using an Ubuntu based distro then use any equivalent command for your distro's package manager, these tools should be easily available for all distros.
+
+### Step 2 - Building the OS
+This process will work on any Linux distro as long as you have the previously stated dependencies installed
+
+There are 2 commands you can use for this:
+
+`make all` - This produces an os.img file
+
+`make run` - This produces an os.img file (like the make all command) but it also runs the img file in qemu so you can test it out.
+
+# Other details
+
+## Contact (If you want to be a point of contact email me and then you can add your email here)
 elroylilly@gmail.com for any questions
 
 ## Pictures
@@ -54,4 +84,6 @@ elroylilly@gmail.com for any questions
 - kotofyt
 - xtn59
 - c-bass
+- MorganPG / u/MorganPG1 (added build instructions to readme)
 - u/EastConsequence3792
+
