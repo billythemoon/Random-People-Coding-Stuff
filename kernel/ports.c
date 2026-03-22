@@ -3,7 +3,6 @@
 // Just a small file for interacting with ports.
 
 #include "ports.h"
-#include <stdint.h>
 
 
 // Write a byte to a port

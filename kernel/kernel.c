@@ -1,4 +1,4 @@
-#include "kernel.h"
+//#include "kernel.h"
 #include "drivers/vga.h"
 #include "drivers/keyboard.h"
 #include "mem.h"

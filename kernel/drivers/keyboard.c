@@ -1,11 +1,8 @@
-
 // bonk enjoyer (dorito girl)
 
 // PS/2 keyboard driver
 
 #include "keyboard.h"
-#include <stdint.h>
-#include <stdbool.h>
 #include "../ports.h"
 
 // Layout map by scancodes.

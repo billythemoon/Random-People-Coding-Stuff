@@ -23,17 +23,17 @@ static int num_commands = sizeof(commands) / sizeof(commands[0]);
 // ---- Command Functions ----
 
 static void cmd_help(uint8_t color) {
-    printf("help   - show this message\n", color);
+    printf("\nhelp   - show this message\n", color);
     printf("hello  - say hello\n", color);
-    printf("test   - placeholder\n", color);
+    printf("test   - placeholder", color);
 }
 
 static void cmd_hello(uint8_t color) {
-    printf("Hello, world!\n", color);
+    printf("\nHello, world!", color);
 }
 
 static void cmd_test(uint8_t color) {
-    printf("Test command has run successfully\n", color);
+    printf("\nTest command has run successfully", color);
 }
 
 // ---- dispatcher ----
@@ -53,5 +53,5 @@ void run_command(char *input, uint8_t color) {
             return;
         }
     }
-    printf("Unknown command. Type 'help'.\n", color);
+    printf("\nUnknown command. Type 'help' for available commands", color);
 }
