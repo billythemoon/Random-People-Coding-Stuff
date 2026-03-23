@@ -53,6 +53,7 @@ static void cmd_contributors(uint8_t color) {
     printf("MorganPG1\n", color);
     printf("Zorx555\n", color);
     printf("mckaylap2304\n", color);
+    printf("TheOtterMonarch\n", color);
 }
 
 static void cmd_setkeyswe(uint8_t color) {
